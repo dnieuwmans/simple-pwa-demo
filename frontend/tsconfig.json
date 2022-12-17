@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "incremental": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es6",
+            "es2016.array.include"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "tsc-output",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "preserveSymlinks": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "strictBindCallApply": true,
+        "target": "es6",
+        "tsBuildInfoFile": "./tsc-output/.tsbuildinfo"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "src/ServiceWorkers/",
+    ]
+}

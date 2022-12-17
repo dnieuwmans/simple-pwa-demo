@@ -1,0 +1,48 @@
+{
+  "name": "pwa-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack serve --mode development --devtool source-map",
+    "serve": "serve -l 8080 -s -n ./build",
+    "build:serve": "yarn build && yarn serve",
+    "build:serve:npm": "npm run build && npm run serve" 
+  },
+  "dependencies": {
+    "dayjs": "^1.11.6",
+    "idb": "^7.1.1",
+    "jotai": "^1.10.0",
+    "lodash-es": "^4.17.21",
+    "numeral": "^2.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/lodash-es": "^4.17.6",
+    "@types/numeral": "^2.0.2",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "babel-loader": "^9.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "core-js": "^3.26.1",
+    "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "serve": "^14.1.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-middleware": "^5.3.3",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
